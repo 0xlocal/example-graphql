@@ -19,8 +19,10 @@ For create `GraphQL` using `NestJS`, we need several dependencies. Here the depe
 
 Using `Yarn`:
 
-> $ yarn add @nestjs/graphql graphql graphql-tools apollo-server-express
+> $ yarn add @nestjs/graphql graphql@^15 graphql-tools apollo-server-express
 
 Using `Npm`:
 
-> $ npm install @nestjs/graphql graphql graphql-tools apollo-server-express
+> $ npm install @nestjs/graphql graphql@^15 graphql-tools apollo-server-express
+
+Why should be `graphql@^15` ? Here the [answer](https://stackoverflow.com/questions/69778679/nestjs-expected-undefined-to-be-a-graphql-schema).

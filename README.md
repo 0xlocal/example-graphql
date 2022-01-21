@@ -13,7 +13,7 @@ Go to terminal and go inside project folder, then run:
 after that .yarnrc.yml will appear on project file.
 add `nodeLinker: node-modules` on `.yarnrc.yml`.
 
-### Dependencies needed
+## Dependencies needed
 
 For create `GraphQL` using `NestJS`, we need several dependencies. Here the dependencies that we needed.
 
@@ -50,10 +50,10 @@ Before running migrations, you need to provide typeorm config in `ormconfig.json
   
   ```javascript
 {
-    "type": "mysql",
+    "type": "postgres",
     "host": "localhost",
     "port": 5432,
-    "username": "root",
+    "username": "postgres",
     "password": "",
     "database": "",
     "entities": ["src/modules/**/*.entity.ts"],

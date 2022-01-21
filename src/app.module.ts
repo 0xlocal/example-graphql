@@ -3,6 +3,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
 import { PetsModule } from './pets/pets.module';
+import { OwnersModule } from './owners/owners.module';
 
 @Module({
   imports: [
@@ -14,9 +15,10 @@ import { PetsModule } from './pets/pets.module';
       url: process.env.DATABASE_URL,
       entities: [join(__dirname, '**', '*.entity.{ts,js}')],
       ssl: false,
-      synchronize: true,
+      synchronize: false,
     }),
     PetsModule,
+    OwnersModule,
   ],
   controllers: [],
   providers: [],

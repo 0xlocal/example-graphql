@@ -38,3 +38,4 @@ yarn*
 package-*
 Dockerfile
 docker*
+ormconfig*
